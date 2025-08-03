@@ -1,0 +1,48 @@
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(123,47,242,0.12);
+  border-radius: 16px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(123,47,242,0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
+  padding: 1.2rem 1rem 1rem 1rem;
+}
+
+.playlist-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(123,47,242,0.18);
+  background: rgba(123,47,242,0.22);
+}
+
+.playlist-cover {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.playlist-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #e0c3fc;
+}
+
+.playlist-desc {
+  font-size: 0.97rem;
+  color: #fff;
+  opacity: 0.8;
+  text-align: center;
+}

@@ -1,0 +1,98 @@
+/* Estilos globales para tema morado tipo Spotify */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Avenir', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%);
+  color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page {
+  padding: 2.5rem 1.5rem 1rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(30, 0, 50, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(123,47,242,0.08);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 1.1;
+  color: #e0c3fc;
+  margin-bottom: 0.5rem;
+}
+
+input, button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.7em 1em;
+  margin: 0.3em 0;
+  font-size: 1rem;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+  width: 100%;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #7b2ff2;
+  border: 1px solid #e0c3fc;
+  box-sizing: border-box;
+}
+
+button {
+  background: #7b2ff2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #f357a8;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

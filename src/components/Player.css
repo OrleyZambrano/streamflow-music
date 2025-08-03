@@ -1,0 +1,70 @@
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 -2px 16px rgba(123,47,242,0.2);
+  z-index: 100;
+}
+
+.player-song-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.player-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.player-artist {
+  font-size: 0.95rem;
+  color: #e0c3fc;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.player-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.player-btn:hover {
+  color: #e0c3fc;
+}
+
+.player-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 220px;
+}
+
+.player-progress input[type="range"] {
+  width: 120px;
+  accent-color: #e0c3fc;
+}
